@@ -1,0 +1,15 @@
+25-Jul-22 22:12:27 - __main__ - INFO - Page has successfully been loaded.
+25-Jul-22 22:12:27 - data_parser - INFO - Returned the title
+25-Jul-22 22:12:27 - __main__ - INFO - ['Markets Diary']
+25-Jul-22 22:12:27 - __main__ - INFO - <title>Markets Diary</title>
+25-Jul-22 22:12:28 - __main__ - INFO - The scrape has completed
+25-Jul-22 22:13:14 - __main__ - INFO - Page has successfully been loaded.
+25-Jul-22 22:13:14 - data_parser - INFO - Returned the title
+25-Jul-22 22:13:14 - __main__ - INFO - ['Markets Diary']
+25-Jul-22 22:13:14 - __main__ - INFO - <title>Markets Diary</title>
+25-Jul-22 22:13:14 - __main__ - INFO - The scrape has completed
+25-Jul-22 22:13:59 - __main__ - INFO - Page has successfully been loaded.
+25-Jul-22 22:13:59 - data_parser - INFO - Returned the title
+25-Jul-22 22:13:59 - __main__ - INFO - ['Markets Diary']
+25-Jul-22 22:13:59 - __main__ - INFO - <title>Markets Diary</title>
+25-Jul-22 22:13:59 - __main__ - INFO - The scrape has completed
