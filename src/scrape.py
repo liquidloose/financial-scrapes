@@ -1,30 +1,47 @@
+
 '''
-Connects to designated website and prints the page html.
+Calls upon playwright to open web page.
 '''
+import logging
+import asyncio
+from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
 
-
-def stream():
-    '''Tries to yield a stream'''
-    print('this is the stream lolz')
-    yield 'crap'
+from data_parser import SiteParser
+from data import Data
 
 
-async def output(page):
-    print(page.url)
-    print('that was the url of the page broski')
-    return stream()
+logging.basicConfig(level=logging.INFO, filename='app.log', filemode='a',
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
+
+logger = logging.getLogger(__name__)
 
 
-async def scrape():
+async def main():
     '''
-    Launches browser and calls the crawler.
+    Opens browser and sends page html to parser
     '''
-    async with async_playwright() as play_wright:
-        browser = await play_wright.firefox.launch(headless=False)
+
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=False)
         page = await browser.new_page()
         await page.goto('https://www.wsj.com/market-data/stocks/marketsdiary?\
-            fbclid=IwAR0gD9HYW8CFy70OJCsWVXIfjMep_XtoZ4RjzGCTpCDSmq4LXeYcQkHYizY')
-        print(page)
-        await output(page)
+                fbclid=IwAR0gD9HYW8CFy70OJCsWVXIfjMep_XtoZ4RjzGCTpCDSmq4LXeYcQkHYizY')
+
+        await page.wait_for_timeout(1000)
+        html = await page.content()
+        if html:
+            logger.info('Page has successfully been loaded.')
+        soup = BeautifulSoup(html, 'html.parser')
+        parse = SiteParser(soup)
+        logger.info(parse.title())
+        logger.info(soup.title)
+
         await browser.close()
+        name = 'ron'
+        assert name == 'ron'
+        logger.info("The scrape has completed")
+    return Data.test
+
+if __name__ == "__main__":
+    asyncio.run(main())

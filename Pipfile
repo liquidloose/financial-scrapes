@@ -4,14 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-fastapi = "*"
 beautifulsoup4 = "*"
 playwright = "*"
-pylint = "*"
-asyncio = "*"
-pylance = "*"
 
 [dev-packages]
+pytest-asyncio = "*"
+pytest = "*"
 pylint = "*"
 
 [requires]
