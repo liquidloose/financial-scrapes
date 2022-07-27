@@ -7,7 +7,7 @@ logging.basicConfig(level=logging.INFO, filename='app.log', filemode='a',
 logger = logging.getLogger(__name__)
 
 
-class SiteParser:
+class HTMLParser:
     '''
     Parses site information
     '''

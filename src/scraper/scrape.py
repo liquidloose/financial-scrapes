@@ -7,8 +7,8 @@ import asyncio
 from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
 
-from data_parser import SiteParser
-from data import Data
+from scraper.data_parser import HTMLParser
+from scraper.file_scanner import FileScanner
 
 
 logging.basicConfig(level=logging.INFO, filename='app.log', filemode='a',
@@ -21,7 +21,9 @@ async def main():
     '''
     Opens browser and sends page html to parser
     '''
-
+    test = FileScanner
+    print(test.get_html)
+    print(test)
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
         page = await browser.new_page()
@@ -33,7 +35,7 @@ async def main():
         if html:
             logger.info('Page has successfully been loaded.')
         soup = BeautifulSoup(html, 'html.parser')
-        parse = SiteParser(soup)
+        parse = HTMLParser(soup)
         logger.info(parse.title())
         logger.info(soup.title)
 
@@ -41,7 +43,7 @@ async def main():
         name = 'ron'
         assert name == 'ron'
         logger.info("The scrape has completed")
-    return Data.test
-
+    return 'ron'
+    
 if __name__ == "__main__":
     asyncio.run(main())
