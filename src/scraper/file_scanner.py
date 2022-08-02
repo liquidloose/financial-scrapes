@@ -3,6 +3,7 @@ Returns an html file's contents as a string
 '''
 import logging
 import os
+import sys
 
 from tomlkit import string
 
@@ -25,8 +26,8 @@ class FileScanner:
         Returns list of file names in the html directory
         '''
 
-        path = '../src/scraper/html'
-        obj = os.scandir(path)
+        #path = '.'
+        obj = os.scandir(path='html/')
         file_name_list = []
 
         for entry in obj:
@@ -39,3 +40,4 @@ class FileScanner:
 
 testing = FileScanner()
 print(testing.get_html())
+logger.info(f'{sys.path}')

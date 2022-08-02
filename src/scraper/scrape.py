@@ -7,8 +7,8 @@ import asyncio
 from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
 
-from scraper.data_parser import HTMLParser
-from scraper.file_scanner import FileScanner
+from data_parser import HTMLParser
+from file_scanner import FileScanner
 
 
 logging.basicConfig(level=logging.INFO, filename='app.log', filemode='a',

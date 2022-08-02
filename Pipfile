@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 beautifulsoup4 = "*"
 playwright = "*"
+pylint = "*"
+pytest-asyncio = "*"
 
 [dev-packages]
 pytest-asyncio = "*"

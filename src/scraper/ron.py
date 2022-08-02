@@ -4,8 +4,10 @@ Runs tests
 import logging
 import sys
 
-from src.scraper.file_scanner import FileScanner
+from file_scanner import FileScanner
 
+
+sys.path.append('../src/scraper/html/')
 
 print(sys.path)
 logging.basicConfig(level=logging.INFO, filename='app.log', filemode='a',
