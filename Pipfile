@@ -13,6 +13,8 @@ pytest-asyncio = "*"
 pytest-asyncio = "*"
 pytest = "*"
 pylint = "*"
+autopep8 = "*"
+bpython = "*"
 
 [requires]
 python_version = "3.10"

@@ -7,8 +7,8 @@ import asyncio
 from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
 
-from data_parser import HTMLParser
-from file_scanner import FileScanner
+from src.scraper.data_parser import HTMLParser
+from src.scraper.file_scanner import FileScanner
 
 
 logging.basicConfig(level=logging.INFO, filename='app.log', filemode='a',
@@ -44,6 +44,6 @@ async def main():
         assert name == 'ron'
         logger.info("The scrape has completed")
     return 'ron'
-    
+
 if __name__ == "__main__":
     asyncio.run(main())

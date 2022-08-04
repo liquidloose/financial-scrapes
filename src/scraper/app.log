@@ -1,0 +1,13 @@
+02-Aug-22 00:19:31 - file_scanner - INFO - Files scanned
+02-Aug-22 00:19:31 - file_scanner - INFO - ['/var/www/financial-scrapes/src/scraper', '/home/alonewolf/.pyenv/versions/3.10.5/lib/python310.zip', '/home/alonewolf/.pyenv/versions/3.10.5/lib/python3.10', '/home/alonewolf/.pyenv/versions/3.10.5/lib/python3.10/lib-dynload', '/home/alonewolf/.local/share/virtualenvs/financial-scrapes-iOERVNl7/lib/python3.10/site-packages']
+02-Aug-22 00:19:31 - __main__ - INFO - hi
+02-Aug-22 00:19:47 - file_scanner - INFO - Files scanned
+02-Aug-22 00:19:47 - file_scanner - INFO - ['/var/www/financial-scrapes/src/scraper', '/home/alonewolf/.pyenv/versions/3.10.5/lib/python310.zip', '/home/alonewolf/.pyenv/versions/3.10.5/lib/python3.10', '/home/alonewolf/.pyenv/versions/3.10.5/lib/python3.10/lib-dynload', '/home/alonewolf/.local/share/virtualenvs/financial-scrapes-iOERVNl7/lib/python3.10/site-packages']
+02-Aug-22 00:19:47 - __main__ - INFO - hi
+02-Aug-22 00:20:09 - file_scanner - INFO - Files scanned
+02-Aug-22 00:20:09 - file_scanner - INFO - ['/var/www/financial-scrapes/src/scraper', '/home/alonewolf/.pyenv/versions/3.10.5/lib/python310.zip', '/home/alonewolf/.pyenv/versions/3.10.5/lib/python3.10', '/home/alonewolf/.pyenv/versions/3.10.5/lib/python3.10/lib-dynload', '/home/alonewolf/.local/share/virtualenvs/financial-scrapes-iOERVNl7/lib/python3.10/site-packages']
+02-Aug-22 00:20:14 - __main__ - INFO - Page has successfully been loaded.
+02-Aug-22 00:20:14 - data_parser - INFO - Returned the title
+02-Aug-22 00:20:14 - __main__ - INFO - ['Markets Diary']
+02-Aug-22 00:20:14 - __main__ - INFO - <title>Markets Diary</title>
+02-Aug-22 00:20:14 - __main__ - INFO - The scrape has completed
