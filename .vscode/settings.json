@@ -1,6 +1,1 @@
-{
-  "editor.defaultFormatter": "himanoa.Python-autopep8",
-  "editor.formatOnPaste": false,
-  "editor.formatOnSave": true,
-  "python.analysis.extraPaths": ["./src/scraper"]
-}
+

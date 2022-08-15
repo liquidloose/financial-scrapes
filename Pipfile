@@ -8,6 +8,7 @@ beautifulsoup4 = "*"
 playwright = "*"
 pylint = "*"
 pytest-asyncio = "*"
+requests = "*"
 
 [dev-packages]
 pytest-asyncio = "*"

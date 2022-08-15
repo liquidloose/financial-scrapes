@@ -3,8 +3,7 @@ Runs tests
 '''
 import logging
 import sys
-
-from src.scraper.file_scanner import FileScanner
+import pytest
 
 
 print(sys.path)
@@ -12,7 +11,7 @@ logging.basicConfig(level=logging.INFO, filename='app.log', filemode='a',
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 
 logger = logging.getLogger(__name__)
-logger.info('hi')
+logger.warning('hiasdfasdfasdf')
 
 # @pytest.mark.asyncio
 # async def test_main_scraper():
@@ -20,11 +19,19 @@ logger.info('hi')
 #    assert await main() == 0
 
 
-def test_file_scanner():
+@pytest.fixture
+def get_html():
     '''
-    Checks the FileScanner class
+    Opens and returns html file.
     '''
-    scanner = FileScanner()
-    #html = scanner.get_html()
-    logger.info(scanner.get_html())
-    assert len(scanner.get_html()) > 0
+    print('coming straigt atchya from the get_html fixture!!!')
+    with open('markets_diary.html', 'r', encoding='utf-8') as f:
+        print(f.read())
+    return f
+
+
+def test_html_exists(get_html):
+    '''
+    Checks to see if the html file exists.
+    '''
+    assert get_html

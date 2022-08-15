@@ -1,9 +1,12 @@
-
+'''
+Parsing class that takes html input and extracts specific data.
+'''
 import logging
 
 
 logging.basicConfig(level=logging.INFO, filename='app.log', filemode='a',
-                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    datefmt='%d-%b-%y %H:%M:%S')
 logger = logging.getLogger(__name__)
 
 

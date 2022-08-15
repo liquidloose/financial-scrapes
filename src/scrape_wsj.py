@@ -2,28 +2,26 @@
 '''
 Calls upon playwright to open web page.
 '''
-import logging
+from hashlib import new
 import asyncio
-from bs4 import BeautifulSoup
+import logging
+from bs4 import BeautifulSoup as Soup
 from playwright.async_api import async_playwright
-
-from src.scraper.data_parser import HTMLParser
-from src.scraper.file_scanner import FileScanner
-
+from data_parser import HTMLParser
 
 logging.basicConfig(level=logging.INFO, filename='app.log', filemode='a',
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 
 logger = logging.getLogger(__name__)
 
+logger.info('Scrape Initialized')
+
 
 async def main():
     '''
-    Opens browser and sends page html to parser
+    Opens web page and sends page html to parser
     '''
-    test = FileScanner
-    print(test.get_html)
-    print(test)
+
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
         page = await browser.new_page()
@@ -34,7 +32,7 @@ async def main():
         html = await page.content()
         if html:
             logger.info('Page has successfully been loaded.')
-        soup = BeautifulSoup(html, 'html.parser')
+        soup = Soup(html, 'html.parser')
         parse = HTMLParser(soup)
         logger.info(parse.title())
         logger.info(soup.title)
