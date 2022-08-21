@@ -9,6 +9,7 @@ playwright = "*"
 pylint = "*"
 pytest-asyncio = "*"
 requests = "*"
+pandas = "*"
 
 [dev-packages]
 pytest-asyncio = "*"

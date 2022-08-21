@@ -1,0 +1,469 @@
+{
+    "id": "{\"application\":\"WSJ\",\"marketsDiaryType\":\"diaries\"}",
+    "type": "mdc_marketsdiary",
+    "data": {
+        "instrumentSets": [
+            {
+                "headerFields": [
+                    {
+                        "value": "name",
+                        "label": "NYSE"
+                    },
+                    {
+                        "value": "latestClose",
+                        "label": "Latest Close"
+                    },
+                    {
+                        "value": "previousClose",
+                        "label": "Previous Close"
+                    },
+                    {
+                        "value": "weekAgo",
+                        "label": "Week Ago"
+                    }
+                ],
+                "instruments": [
+                    {
+                        "id": "issuestraded",
+                        "name": "Issues traded",
+                        "latestClose": "3,346",
+                        "previousClose": "3,370",
+                        "weekAgo": "3,367"
+                    },
+                    {
+                        "id": "advances",
+                        "name": "Advances",
+                        "latestClose": "2,580",
+                        "previousClose": "1,900",
+                        "weekAgo": "1,528"
+                    },
+                    {
+                        "id": "declines",
+                        "name": "Declines",
+                        "latestClose": "617",
+                        "previousClose": "1,296",
+                        "weekAgo": "1,685"
+                    },
+                    {
+                        "id": "unchanged",
+                        "name": "Unchanged",
+                        "latestClose": "149",
+                        "previousClose": "174",
+                        "weekAgo": "154"
+                    },
+                    {
+                        "id": "newhighs",
+                        "name": "New highs",
+                        "latestClose": "56",
+                        "previousClose": "57",
+                        "weekAgo": "27"
+                    },
+                    {
+                        "id": "newlows",
+                        "name": "New lows",
+                        "latestClose": "24",
+                        "previousClose": "28",
+                        "weekAgo": "46"
+                    },
+                    {
+                        "id": "advvolume",
+                        "name": "Adv. volume*",
+                        "latestClose": "658,799,199",
+                        "previousClose": "536,431,243",
+                        "weekAgo": "507,699,250"
+                    },
+                    {
+                        "id": "declvolume",
+                        "name": "Decl. volume*",
+                        "latestClose": "87,883,075",
+                        "previousClose": "306,025,740",
+                        "weekAgo": "299,505,360"
+                    },
+                    {
+                        "id": "totalvolume",
+                        "name": "Total volume*",
+                        "latestClose": "752,856,320",
+                        "previousClose": "853,956,240",
+                        "weekAgo": "818,671,319"
+                    },
+                    {
+                        "id": "closingarmstrin",
+                        "name": "Closing Arms (TRIN)†",
+                        "latestClose": "0.66",
+                        "previousClose": "0.88",
+                        "weekAgo": "0.52"
+                    },
+                    {
+                        "id": "blocktrades",
+                        "name": "Block trades*",
+                        "latestClose": "3,838",
+                        "previousClose": "4,345",
+                        "weekAgo": "4,370"
+                    },
+                    {
+                        "id": "advvolume",
+                        "name": "Adv. volume",
+                        "latestClose": "3,239,258,339",
+                        "previousClose": "2,861,163,874",
+                        "weekAgo": "2,572,891,418"
+                    },
+                    {
+                        "id": "declvolume",
+                        "name": "Decl. volume",
+                        "latestClose": "510,490,672",
+                        "previousClose": "1,721,541,978",
+                        "weekAgo": "1,470,858,404"
+                    },
+                    {
+                        "id": "totalvolume",
+                        "name": "Total volume",
+                        "latestClose": "3,791,953,995",
+                        "previousClose": "4,660,509,977",
+                        "weekAgo": "4,097,836,411"
+                    }
+                ]
+            },
+            {
+                "headerFields": [
+                    {
+                        "value": "name",
+                        "label": "NASDAQ"
+                    },
+                    {
+                        "value": "latestClose",
+                        "label": "Latest Close"
+                    },
+                    {
+                        "value": "previousClose",
+                        "label": "Previous Close"
+                    },
+                    {
+                        "value": "weekAgo",
+                        "label": "Week Ago"
+                    }
+                ],
+                "instruments": [
+                    {
+                        "id": "issuestraded",
+                        "name": "Issues traded",
+                        "latestClose": "4,832",
+                        "previousClose": "4,901",
+                        "weekAgo": "4,842"
+                    },
+                    {
+                        "id": "advances",
+                        "name": "Advances",
+                        "latestClose": "3,364",
+                        "previousClose": "2,549",
+                        "weekAgo": "2,544"
+                    },
+                    {
+                        "id": "declines",
+                        "name": "Declines",
+                        "latestClose": "1,214",
+                        "previousClose": "2,046",
+                        "weekAgo": "2,024"
+                    },
+                    {
+                        "id": "unchanged",
+                        "name": "Unchanged",
+                        "latestClose": "254",
+                        "previousClose": "306",
+                        "weekAgo": "274"
+                    },
+                    {
+                        "id": "newhighs",
+                        "name": "New highs",
+                        "latestClose": "96",
+                        "previousClose": "84",
+                        "weekAgo": "68"
+                    },
+                    {
+                        "id": "newlows",
+                        "name": "New lows",
+                        "latestClose": "60",
+                        "previousClose": "46",
+                        "weekAgo": "66"
+                    },
+                    {
+                        "id": "closingarmstrin",
+                        "name": "Closing Arms (TRIN)†",
+                        "latestClose": "0.76",
+                        "previousClose": "0.96",
+                        "weekAgo": "1.00"
+                    },
+                    {
+                        "id": "blocktrades",
+                        "name": "Block trades",
+                        "latestClose": "29,820",
+                        "previousClose": "40,690",
+                        "weekAgo": "27,135"
+                    },
+                    {
+                        "id": "advvolume",
+                        "name": "Adv. volume",
+                        "latestClose": "3,709,840,887",
+                        "previousClose": "3,240,193,507",
+                        "weekAgo": "2,693,186,539"
+                    },
+                    {
+                        "id": "declvolume",
+                        "name": "Decl. volume",
+                        "latestClose": "1,011,527,474",
+                        "previousClose": "2,508,959,253",
+                        "weekAgo": "2,145,349,632"
+                    },
+                    {
+                        "id": "totalvolume",
+                        "name": "Total volume",
+                        "latestClose": "4,761,851,834",
+                        "previousClose": "5,792,834,489",
+                        "weekAgo": "4,882,377,075"
+                    }
+                ]
+            },
+            {
+                "headerFields": [
+                    {
+                        "value": "name",
+                        "label": "NYSE American"
+                    },
+                    {
+                        "value": "latestClose",
+                        "label": "Latest Close"
+                    },
+                    {
+                        "value": "previousClose",
+                        "label": "Previous Close"
+                    },
+                    {
+                        "value": "weekAgo",
+                        "label": "Week Ago"
+                    }
+                ],
+                "instruments": [
+                    {
+                        "id": "issuestraded",
+                        "name": "Issues traded",
+                        "latestClose": "284",
+                        "previousClose": "286",
+                        "weekAgo": "291"
+                    },
+                    {
+                        "id": "advances",
+                        "name": "Advances",
+                        "latestClose": "181",
+                        "previousClose": "148",
+                        "weekAgo": "129"
+                    },
+                    {
+                        "id": "declines",
+                        "name": "Declines",
+                        "latestClose": "100",
+                        "previousClose": "128",
+                        "weekAgo": "147"
+                    },
+                    {
+                        "id": "unchanged",
+                        "name": "Unchanged",
+                        "latestClose": "3",
+                        "previousClose": "10",
+                        "weekAgo": "15"
+                    },
+                    {
+                        "id": "newhighs",
+                        "name": "New highs",
+                        "latestClose": "2",
+                        "previousClose": "4",
+                        "weekAgo": "1"
+                    },
+                    {
+                        "id": "newlows",
+                        "name": "New lows",
+                        "latestClose": "3",
+                        "previousClose": "3",
+                        "weekAgo": "3"
+                    },
+                    {
+                        "id": "advvolume",
+                        "name": "Adv. volume*",
+                        "latestClose": "7,010,242",
+                        "previousClose": "11,295,087",
+                        "weekAgo": "10,476,801"
+                    },
+                    {
+                        "id": "declvolume",
+                        "name": "Decl. volume*",
+                        "latestClose": "4,185,436",
+                        "previousClose": "4,352,942",
+                        "weekAgo": "3,191,864"
+                    },
+                    {
+                        "id": "totalvolume",
+                        "name": "Total volume*",
+                        "latestClose": "11,604,595",
+                        "previousClose": "15,958,031",
+                        "weekAgo": "13,775,541"
+                    },
+                    {
+                        "id": "closingarmstrin",
+                        "name": "Closing Arms (TRIN)†",
+                        "latestClose": "1.10",
+                        "previousClose": "0.23",
+                        "weekAgo": "0.20"
+                    },
+                    {
+                        "id": "blocktrades",
+                        "name": "Block trades*",
+                        "latestClose": "151",
+                        "previousClose": "186",
+                        "weekAgo": "131"
+                    },
+                    {
+                        "id": "advvolume",
+                        "name": "Adv. volume",
+                        "latestClose": "121,784,326",
+                        "previousClose": "306,738,954",
+                        "weekAgo": "192,838,341"
+                    },
+                    {
+                        "id": "declvolume",
+                        "name": "Decl. volume",
+                        "latestClose": "73,821,301",
+                        "previousClose": "60,848,780",
+                        "weekAgo": "43,220,153"
+                    },
+                    {
+                        "id": "totalvolume",
+                        "name": "Total volume",
+                        "latestClose": "199,037,979",
+                        "previousClose": "386,385,708",
+                        "weekAgo": "237,106,225"
+                    }
+                ]
+            },
+            {
+                "headerFields": [
+                    {
+                        "value": "name",
+                        "label": "NYSE Arca"
+                    },
+                    {
+                        "value": "latestClose",
+                        "label": "Latest Close"
+                    },
+                    {
+                        "value": "previousClose",
+                        "label": "Previous Close"
+                    },
+                    {
+                        "value": "weekAgo",
+                        "label": "Week Ago"
+                    }
+                ],
+                "instruments": [
+                    {
+                        "id": "issuestraded",
+                        "name": "Issues traded",
+                        "latestClose": "1,739",
+                        "previousClose": "1,728",
+                        "weekAgo": "1,727"
+                    },
+                    {
+                        "id": "advances",
+                        "name": "Advances",
+                        "latestClose": "1,545",
+                        "previousClose": "917",
+                        "weekAgo": "775"
+                    },
+                    {
+                        "id": "declines",
+                        "name": "Declines",
+                        "latestClose": "185",
+                        "previousClose": "782",
+                        "weekAgo": "938"
+                    },
+                    {
+                        "id": "unchanged",
+                        "name": "Unchanged",
+                        "latestClose": "9",
+                        "previousClose": "29",
+                        "weekAgo": "14"
+                    },
+                    {
+                        "id": "newhighs",
+                        "name": "New highs",
+                        "latestClose": "19",
+                        "previousClose": "16",
+                        "weekAgo": "2"
+                    },
+                    {
+                        "id": "newlows",
+                        "name": "New lows",
+                        "latestClose": "5",
+                        "previousClose": "6",
+                        "weekAgo": "2"
+                    },
+                    {
+                        "id": "advvolume",
+                        "name": "Adv. volume*",
+                        "latestClose": "160,988,220",
+                        "previousClose": "110,595,174",
+                        "weekAgo": "97,977,809"
+                    },
+                    {
+                        "id": "declvolume",
+                        "name": "Decl. volume*",
+                        "latestClose": "34,368,312",
+                        "previousClose": "117,927,064",
+                        "weekAgo": "133,945,528"
+                    },
+                    {
+                        "id": "totalvolume",
+                        "name": "Total volume*",
+                        "latestClose": "195,705,343",
+                        "previousClose": "248,904,763",
+                        "weekAgo": "234,489,909"
+                    },
+                    {
+                        "id": "closingarmstrin",
+                        "name": "Closing Arms (TRIN)†",
+                        "latestClose": "2.29",
+                        "previousClose": "1.19",
+                        "weekAgo": "1.03"
+                    },
+                    {
+                        "id": "blocktrades",
+                        "name": "Block trades*",
+                        "latestClose": "918",
+                        "previousClose": "1,143",
+                        "weekAgo": "1,001"
+                    },
+                    {
+                        "id": "advvolume",
+                        "name": "Adv. volume",
+                        "latestClose": "899,435,719",
+                        "previousClose": "667,093,519",
+                        "weekAgo": "578,548,095"
+                    },
+                    {
+                        "id": "declvolume",
+                        "name": "Decl. volume",
+                        "latestClose": "246,428,641",
+                        "previousClose": "677,837,571",
+                        "weekAgo": "721,196,262"
+                    },
+                    {
+                        "id": "totalvolume",
+                        "name": "Total volume",
+                        "latestClose": "1,148,050,076",
+                        "previousClose": "1,474,849,058",
+                        "weekAgo": "1,312,581,659"
+                    }
+                ]
+            }
+        ],
+        "timestamp": "Friday, August 12, 2022"
+    },
+    "hash": "{\"id\":\"{\\\"application\\\":\\\"WSJ\\\",\\\"marketsDiaryType\\\":\\\"diaries\\\"}\",\"type\":\"mdc_marketsdiary\",\"data\":{\"instrumentSets\":[{\"headerFields\":[{\"value\":\"name\",\"label\":\"NYSE\"},{\"value\":\"latestClose\",\"label\":\"Latest Close\"},{\"value\":\"previousClose\",\"label\":\"Previous Close\"},{\"value\":\"weekAgo\",\"label\":\"Week Ago\"}],\"instruments\":[{\"id\":\"issuestraded\",\"name\":\"Issues traded\",\"latestClose\":\"3,346\",\"previousClose\":\"3,370\",\"weekAgo\":\"3,367\"},{\"id\":\"advances\",\"name\":\"Advances\",\"latestClose\":\"2,580\",\"previousClose\":\"1,900\",\"weekAgo\":\"1,528\"},{\"id\":\"declines\",\"name\":\"Declines\",\"latestClose\":\"617\",\"previousClose\":\"1,296\",\"weekAgo\":\"1,685\"},{\"id\":\"unchanged\",\"name\":\"Unchanged\",\"latestClose\":\"149\",\"previousClose\":\"174\",\"weekAgo\":\"154\"},{\"id\":\"newhighs\",\"name\":\"New highs\",\"latestClose\":\"56\",\"previousClose\":\"57\",\"weekAgo\":\"27\"},{\"id\":\"newlows\",\"name\":\"New lows\",\"latestClose\":\"24\",\"previousClose\":\"28\",\"weekAgo\":\"46\"},{\"id\":\"advvolume\",\"name\":\"Adv. volume*\",\"latestClose\":\"658,799,199\",\"previousClose\":\"536,431,243\",\"weekAgo\":\"507,699,250\"},{\"id\":\"declvolume\",\"name\":\"Decl. volume*\",\"latestClose\":\"87,883,075\",\"previousClose\":\"306,025,740\",\"weekAgo\":\"299,505,360\"},{\"id\":\"totalvolume\",\"name\":\"Total volume*\",\"latestClose\":\"752,856,320\",\"previousClose\":\"853,956,240\",\"weekAgo\":\"818,671,319\"},{\"id\":\"closingarmstrin\",\"name\":\"Closing Arms (TRIN)†\",\"latestClose\":\"0.66\",\"previousClose\":\"0.88\",\"weekAgo\":\"0.52\"},{\"id\":\"blocktrades\",\"name\":\"Block trades*\",\"latestClose\":\"3,838\",\"previousClose\":\"4,345\",\"weekAgo\":\"4,370\"},{\"id\":\"advvolume\",\"name\":\"Adv. volume\",\"latestClose\":\"3,239,258,339\",\"previousClose\":\"2,861,163,874\",\"weekAgo\":\"2,572,891,418\"},{\"id\":\"declvolume\",\"name\":\"Decl. volume\",\"latestClose\":\"510,490,672\",\"previousClose\":\"1,721,541,978\",\"weekAgo\":\"1,470,858,404\"},{\"id\":\"totalvolume\",\"name\":\"Total volume\",\"latestClose\":\"3,791,953,995\",\"previousClose\":\"4,660,509,977\",\"weekAgo\":\"4,097,836,411\"}]},{\"headerFields\":[{\"value\":\"name\",\"label\":\"NASDAQ\"},{\"value\":\"latestClose\",\"label\":\"Latest Close\"},{\"value\":\"previousClose\",\"label\":\"Previous Close\"},{\"value\":\"weekAgo\",\"label\":\"Week Ago\"}],\"instruments\":[{\"id\":\"issuestraded\",\"name\":\"Issues traded\",\"latestClose\":\"4,832\",\"previousClose\":\"4,901\",\"weekAgo\":\"4,842\"},{\"id\":\"advances\",\"name\":\"Advances\",\"latestClose\":\"3,364\",\"previousClose\":\"2,549\",\"weekAgo\":\"2,544\"},{\"id\":\"declines\",\"name\":\"Declines\",\"latestClose\":\"1,214\",\"previousClose\":\"2,046\",\"weekAgo\":\"2,024\"},{\"id\":\"unchanged\",\"name\":\"Unchanged\",\"latestClose\":\"254\",\"previousClose\":\"306\",\"weekAgo\":\"274\"},{\"id\":\"newhighs\",\"name\":\"New highs\",\"latestClose\":\"96\",\"previousClose\":\"84\",\"weekAgo\":\"68\"},{\"id\":\"newlows\",\"name\":\"New lows\",\"latestClose\":\"60\",\"previousClose\":\"46\",\"weekAgo\":\"66\"},{\"id\":\"closingarmstrin\",\"name\":\"Closing Arms (TRIN)†\",\"latestClose\":\"0.76\",\"previousClose\":\"0.96\",\"weekAgo\":\"1.00\"},{\"id\":\"blocktrades\",\"name\":\"Block trades\",\"latestClose\":\"29,820\",\"previousClose\":\"40,690\",\"weekAgo\":\"27,135\"},{\"id\":\"advvolume\",\"name\":\"Adv. volume\",\"latestClose\":\"3,709,840,887\",\"previousClose\":\"3,240,193,507\",\"weekAgo\":\"2,693,186,539\"},{\"id\":\"declvolume\",\"name\":\"Decl. volume\",\"latestClose\":\"1,011,527,474\",\"previousClose\":\"2,508,959,253\",\"weekAgo\":\"2,145,349,632\"},{\"id\":\"totalvolume\",\"name\":\"Total volume\",\"latestClose\":\"4,761,851,834\",\"previousClose\":\"5,792,834,489\",\"weekAgo\":\"4,882,377,075\"}]},{\"headerFields\":[{\"value\":\"name\",\"label\":\"NYSE American\"},{\"value\":\"latestClose\",\"label\":\"Latest Close\"},{\"value\":\"previousClose\",\"label\":\"Previous Close\"},{\"value\":\"weekAgo\",\"label\":\"Week Ago\"}],\"instruments\":[{\"id\":\"issuestraded\",\"name\":\"Issues traded\",\"latestClose\":\"284\",\"previousClose\":\"286\",\"weekAgo\":\"291\"},{\"id\":\"advances\",\"name\":\"Advances\",\"latestClose\":\"181\",\"previousClose\":\"148\",\"weekAgo\":\"129\"},{\"id\":\"declines\",\"name\":\"Declines\",\"latestClose\":\"100\",\"previousClose\":\"128\",\"weekAgo\":\"147\"},{\"id\":\"unchanged\",\"name\":\"Unchanged\",\"latestClose\":\"3\",\"previousClose\":\"10\",\"weekAgo\":\"15\"},{\"id\":\"newhighs\",\"name\":\"New highs\",\"latestClose\":\"2\",\"previousClose\":\"4\",\"weekAgo\":\"1\"},{\"id\":\"newlows\",\"name\":\"New lows\",\"latestClose\":\"3\",\"previousClose\":\"3\",\"weekAgo\":\"3\"},{\"id\":\"advvolume\",\"name\":\"Adv. volume*\",\"latestClose\":\"7,010,242\",\"previousClose\":\"11,295,087\",\"weekAgo\":\"10,476,801\"},{\"id\":\"declvolume\",\"name\":\"Decl. volume*\",\"latestClose\":\"4,185,436\",\"previousClose\":\"4,352,942\",\"weekAgo\":\"3,191,864\"},{\"id\":\"totalvolume\",\"name\":\"Total volume*\",\"latestClose\":\"11,604,595\",\"previousClose\":\"15,958,031\",\"weekAgo\":\"13,775,541\"},{\"id\":\"closingarmstrin\",\"name\":\"Closing Arms (TRIN)†\",\"latestClose\":\"1.10\",\"previousClose\":\"0.23\",\"weekAgo\":\"0.20\"},{\"id\":\"blocktrades\",\"name\":\"Block trades*\",\"latestClose\":\"151\",\"previousClose\":\"186\",\"weekAgo\":\"131\"},{\"id\":\"advvolume\",\"name\":\"Adv. volume\",\"latestClose\":\"121,784,326\",\"previousClose\":\"306,738,954\",\"weekAgo\":\"192,838,341\"},{\"id\":\"declvolume\",\"name\":\"Decl. volume\",\"latestClose\":\"73,821,301\",\"previousClose\":\"60,848,780\",\"weekAgo\":\"43,220,153\"},{\"id\":\"totalvolume\",\"name\":\"Total volume\",\"latestClose\":\"199,037,979\",\"previousClose\":\"386,385,708\",\"weekAgo\":\"237,106,225\"}]},{\"headerFields\":[{\"value\":\"name\",\"label\":\"NYSE Arca\"},{\"value\":\"latestClose\",\"label\":\"Latest Close\"},{\"value\":\"previousClose\",\"label\":\"Previous Close\"},{\"value\":\"weekAgo\",\"label\":\"Week Ago\"}],\"instruments\":[{\"id\":\"issuestraded\",\"name\":\"Issues traded\",\"latestClose\":\"1,739\",\"previousClose\":\"1,728\",\"weekAgo\":\"1,727\"},{\"id\":\"advances\",\"name\":\"Advances\",\"latestClose\":\"1,545\",\"previousClose\":\"917\",\"weekAgo\":\"775\"},{\"id\":\"declines\",\"name\":\"Declines\",\"latestClose\":\"185\",\"previousClose\":\"782\",\"weekAgo\":\"938\"},{\"id\":\"unchanged\",\"name\":\"Unchanged\",\"latestClose\":\"9\",\"previousClose\":\"29\",\"weekAgo\":\"14\"},{\"id\":\"newhighs\",\"name\":\"New highs\",\"latestClose\":\"19\",\"previousClose\":\"16\",\"weekAgo\":\"2\"},{\"id\":\"newlows\",\"name\":\"New lows\",\"latestClose\":\"5\",\"previousClose\":\"6\",\"weekAgo\":\"2\"},{\"id\":\"advvolume\",\"name\":\"Adv. volume*\",\"latestClose\":\"160,988,220\",\"previousClose\":\"110,595,174\",\"weekAgo\":\"97,977,809\"},{\"id\":\"declvolume\",\"name\":\"Decl. volume*\",\"latestClose\":\"34,368,312\",\"previousClose\":\"117,927,064\",\"weekAgo\":\"133,945,528\"},{\"id\":\"totalvolume\",\"name\":\"Total volume*\",\"latestClose\":\"195,705,343\",\"previousClose\":\"248,904,763\",\"weekAgo\":\"234,489,909\"},{\"id\":\"closingarmstrin\",\"name\":\"Closing Arms (TRIN)†\",\"latestClose\":\"2.29\",\"previousClose\":\"1.19\",\"weekAgo\":\"1.03\"},{\"id\":\"blocktrades\",\"name\":\"Block trades*\",\"latestClose\":\"918\",\"previousClose\":\"1,143\",\"weekAgo\":\"1,001\"},{\"id\":\"advvolume\",\"name\":\"Adv. volume\",\"latestClose\":\"899,435,719\",\"previousClose\":\"667,093,519\",\"weekAgo\":\"578,548,095\"},{\"id\":\"declvolume\",\"name\":\"Decl. volume\",\"latestClose\":\"246,428,641\",\"previousClose\":\"677,837,571\",\"weekAgo\":\"721,196,262\"},{\"id\":\"totalvolume\",\"name\":\"Total volume\",\"latestClose\":\"1,148,050,076\",\"previousClose\":\"1,474,849,058\",\"weekAgo\":\"1,312,581,659\"}]}],\"timestamp\":\"Friday, August 12, 2022\"}}"
+}
