@@ -1,7 +1,9 @@
 '''
 Runs tests
 '''
+from dataclasses import asdict
 import json
+import re
 from socket import gethostbyaddr
 import pytest
 from src.data_parser import WSJParser
@@ -49,10 +51,7 @@ print('hello, world!')
 
 
 def test_json_parsing(get_html):
-    # print(get_html)
-    wsj = WSJParser(get_html)
-    print(wsj)
-    #data = wsj.json_data
-
-    # print(data)
-    assert 3
+    test = WSJParser(get_html)
+    # print(test.html_data)
+    # print(WSJParser.test(get_html))
+    print(test.nyse_data())
