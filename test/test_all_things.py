@@ -3,9 +3,8 @@ Runs tests
 '''
 from dataclasses import asdict
 import json
-import re
-from socket import gethostbyaddr
 import pytest
+
 from src.data_parser import WSJParser
 
 print('hello, world!')
@@ -47,11 +46,12 @@ def test_json_file(get_json):
     assert 3
 
 
-print('hello, world!')
-
-
 def test_json_parsing(get_html):
-    test = WSJParser(get_html)
-    # print(test.html_data)
-    # print(WSJParser.test(get_html))
-    print(test.nyse_data())
+
+    html = WSJParser(get_html)
+    # print(html.base_data())
+    # print(html.nyse_header())
+    # print(html.nasdaq_data())
+    print(asdict(html))
+    # print(html.nyse_header())
+   # print(html.test_test())
