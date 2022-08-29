@@ -67,3 +67,5 @@
 15-Aug-22 00:42:04 - test.test_all_things - WARNING - hiasdfasdfasdf
 15-Aug-22 00:56:57 - test.test_all_things - WARNING - hiasdfasdfasdf
 15-Aug-22 01:01:38 - test.test_all_things - WARNING - hiasdfasdfasdf
+28-Aug-22 20:48:30 - __main__ - INFO - Scrape Initialized
+28-Aug-22 20:48:32 - __main__ - INFO - The scrape has completed

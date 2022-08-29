@@ -2,6 +2,7 @@
 Calls upon playwright to open web page.
 '''
 import asyncio
+from dataclasses import asdict
 import json
 import logging
 from bs4 import BeautifulSoup as Soup
@@ -36,9 +37,10 @@ async def main():
 
         await page.wait_for_timeout(1000)
 
-        nyse = WSJParser(html_string)
-        # print(html_string)
-        print(nyse.parsed_nyse_data())
+        data = WSJParser(html_string)
+        data_dict = asdict(data)
+        print(type(data_dict))
+        print(data_dict['nyse_data'])
 
         logger.info("The scrape has completed")
 

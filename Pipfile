@@ -10,6 +10,7 @@ pylint = "*"
 pytest-asyncio = "*"
 requests = "*"
 pandas = "*"
+openpyxl = "*"
 
 [dev-packages]
 pytest-asyncio = "*"
