@@ -1,71 +1,96 @@
-14-Aug-22 20:48:05 - test.test_all_things - INFO - hi
-14-Aug-22 20:50:13 - test.test_all_things - INFO - hi
-14-Aug-22 21:00:12 - test.test_all_things - INFO - hi
-14-Aug-22 21:07:59 - test.test_all_things - INFO - hi
-14-Aug-22 21:12:07 - test.test_all_things - INFO - hi
-14-Aug-22 21:15:00 - test.test_all_things - WARNING - hi
-14-Aug-22 21:34:41 - test.test_all_things - WARNING - hi
-14-Aug-22 21:39:13 - test.test_all_things - WARNING - hi
-14-Aug-22 21:39:24 - test.test_all_things - WARNING - hi
-14-Aug-22 21:39:55 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 21:39:59 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 21:40:00 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 21:40:02 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 21:40:04 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 21:40:06 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 21:49:19 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 21:49:40 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 21:49:56 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 21:50:11 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 21:51:04 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 22:00:40 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 22:11:53 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 22:18:37 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 22:18:47 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 22:18:52 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 22:24:45 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 22:24:50 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 22:25:06 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 22:42:55 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 22:43:23 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 22:43:52 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 23:17:01 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 23:21:14 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 23:21:54 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 23:22:11 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 23:30:31 - src.scrape_wsj - INFO - Scrape Initialized
-14-Aug-22 23:30:31 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 23:33:25 - src.scrape_wsj - INFO - Scrape Initialized
-14-Aug-22 23:33:25 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 23:33:37 - src.scrape_wsj - INFO - Scrape Initialized
-14-Aug-22 23:33:37 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 23:36:20 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 23:46:11 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 23:49:13 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 23:52:50 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 23:54:47 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 23:55:25 - test.test_all_things - WARNING - hiasdfasdfasdf
-14-Aug-22 23:58:38 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:00:01 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:00:06 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:01:48 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:07:05 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:07:17 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:07:23 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:07:37 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:10:17 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:16:45 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:22:09 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:23:42 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:32:42 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:32:46 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:37:22 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:37:23 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:37:29 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:41:24 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:41:53 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:42:04 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 00:56:57 - test.test_all_things - WARNING - hiasdfasdfasdf
-15-Aug-22 01:01:38 - test.test_all_things - WARNING - hiasdfasdfasdf
-28-Aug-22 20:48:30 - __main__ - INFO - Scrape Initialized
-28-Aug-22 20:48:32 - __main__ - INFO - The scrape has completed
+01-Sep-22 17:44:44 - __main__ - INFO - No file exists yet
+01-Sep-22 17:44:44 - __main__ - INFO - Creating initial file
+01-Sep-22 18:05:35 - __main__ - INFO - No file exists yet
+01-Sep-22 18:05:35 - __main__ - INFO - Creating initial file
+01-Sep-22 18:06:10 - __main__ - INFO - No file exists yet
+01-Sep-22 18:06:10 - __main__ - INFO - Creating initial file
+01-Sep-22 18:07:27 - __main__ - INFO - No file exists yet
+01-Sep-22 18:07:27 - __main__ - INFO - Creating initial file
+01-Sep-22 18:13:26 - __main__ - INFO - No file exists yet
+01-Sep-22 18:13:26 - __main__ - INFO - Creating initial file
+01-Sep-22 18:13:52 - __main__ - INFO - No file exists yet
+01-Sep-22 18:13:52 - __main__ - INFO - Creating initial file
+01-Sep-22 18:18:55 - __main__ - INFO - No file exists yet
+01-Sep-22 18:18:55 - __main__ - INFO - Creating initial file
+01-Sep-22 18:19:08 - __main__ - INFO - No file exists yet
+01-Sep-22 18:19:08 - __main__ - INFO - Creating initial file
+01-Sep-22 18:26:17 - __main__ - INFO - No file exists yet
+01-Sep-22 18:26:17 - __main__ - INFO - Creating initial file
+01-Sep-22 18:26:21 - __main__ - INFO - No file exists yet
+01-Sep-22 18:26:21 - __main__ - INFO - Creating initial file
+01-Sep-22 18:26:55 - __main__ - INFO - No file exists yet
+01-Sep-22 18:26:55 - __main__ - INFO - Creating initial file
+01-Sep-22 18:27:20 - __main__ - INFO - No file exists yet
+01-Sep-22 18:27:20 - __main__ - INFO - Creating initial file
+01-Sep-22 18:27:27 - __main__ - INFO - No file exists yet
+01-Sep-22 18:27:27 - __main__ - INFO - Creating initial file
+01-Sep-22 18:27:53 - __main__ - INFO - No file exists yet
+01-Sep-22 18:27:53 - __main__ - INFO - Creating initial file
+01-Sep-22 18:28:41 - __main__ - INFO - No file exists yet
+01-Sep-22 18:28:41 - __main__ - INFO - Creating initial file
+01-Sep-22 18:36:58 - __main__ - INFO - No file exists yet
+01-Sep-22 18:36:58 - __main__ - INFO - Creating initial file
+01-Sep-22 18:38:52 - __main__ - INFO - No file exists yet
+01-Sep-22 18:38:52 - __main__ - INFO - Creating initial file
+01-Sep-22 18:40:21 - __main__ - INFO - No file exists yet
+01-Sep-22 18:40:21 - __main__ - INFO - Creating initial file
+01-Sep-22 18:40:49 - __main__ - INFO - No file exists yet
+01-Sep-22 18:40:49 - __main__ - INFO - Creating initial file
+01-Sep-22 18:41:27 - __main__ - INFO - No file exists yet
+01-Sep-22 18:41:27 - __main__ - INFO - Creating initial file
+01-Sep-22 18:41:49 - __main__ - INFO - No file exists yet
+01-Sep-22 18:41:49 - __main__ - INFO - Creating initial file
+01-Sep-22 18:42:01 - __main__ - INFO - No file exists yet
+01-Sep-22 18:42:01 - __main__ - INFO - Creating initial file
+01-Sep-22 18:42:08 - __main__ - INFO - No file exists yet
+01-Sep-22 18:42:08 - __main__ - INFO - Creating initial file
+01-Sep-22 18:47:55 - __main__ - INFO - No file exists yet
+01-Sep-22 18:47:55 - __main__ - INFO - Creating initial file
+01-Sep-22 18:53:09 - __main__ - INFO - No file exists yet
+01-Sep-22 18:53:09 - __main__ - INFO - Creating initial file
+01-Sep-22 18:53:43 - __main__ - INFO - No file exists yet
+01-Sep-22 18:53:43 - __main__ - INFO - Creating initial file
+01-Sep-22 18:53:58 - __main__ - INFO - No file exists yet
+01-Sep-22 18:53:58 - __main__ - INFO - Creating initial file
+01-Sep-22 18:56:29 - __main__ - INFO - File exists!
+01-Sep-22 18:56:34 - __main__ - INFO - No file exists yet
+01-Sep-22 18:56:34 - __main__ - INFO - Creating initial file
+01-Sep-22 19:03:36 - __main__ - INFO - No file exists yet
+01-Sep-22 19:03:36 - __main__ - INFO - Creating initial file
+01-Sep-22 19:04:27 - __main__ - INFO - No file exists yet
+01-Sep-22 19:05:10 - __main__ - INFO - No file exists yet
+01-Sep-22 19:05:10 - __main__ - INFO - Creating initial file
+01-Sep-22 19:05:29 - __main__ - INFO - No file exists yet
+01-Sep-22 19:05:29 - __main__ - INFO - Creating initial file
+01-Sep-22 19:13:40 - __main__ - INFO - File exists!
+01-Sep-22 19:13:45 - __main__ - INFO - No file exists yet
+01-Sep-22 19:13:45 - __main__ - INFO - Creating initial file
+01-Sep-22 19:14:22 - __main__ - INFO - File exists!
+01-Sep-22 19:14:28 - __main__ - INFO - No file exists yet
+01-Sep-22 19:14:28 - __main__ - INFO - Creating initial file
+01-Sep-22 19:22:02 - __main__ - INFO - No file exists yet
+01-Sep-22 19:22:02 - __main__ - INFO - Creating initial file
+01-Sep-22 19:23:00 - __main__ - INFO - No file exists yet
+01-Sep-22 19:23:00 - __main__ - INFO - Creating initial file
+01-Sep-22 19:23:14 - __main__ - INFO - No file exists yet
+01-Sep-22 19:23:14 - __main__ - INFO - Creating initial file
+01-Sep-22 19:23:45 - __main__ - INFO - No file exists yet
+01-Sep-22 19:23:45 - __main__ - INFO - Creating initial file
+01-Sep-22 19:23:58 - __main__ - INFO - No file exists yet
+01-Sep-22 19:23:58 - __main__ - INFO - Creating initial file
+01-Sep-22 19:24:05 - __main__ - INFO - No file exists yet
+01-Sep-22 19:24:05 - __main__ - INFO - Creating initial file
+05-Sep-22 13:29:05 - __main__ - INFO - File exists!
+05-Sep-22 13:29:17 - __main__ - INFO - No file exists yet
+05-Sep-22 13:29:17 - __main__ - INFO - Creating initial file
+05-Sep-22 13:29:37 - __main__ - INFO - File exists!
+05-Sep-22 13:29:43 - __main__ - INFO - No file exists yet
+05-Sep-22 13:29:43 - __main__ - INFO - Creating initial file
+05-Sep-22 13:31:06 - __main__ - INFO - File exists!
+05-Sep-22 13:31:14 - __main__ - INFO - No file exists yet
+05-Sep-22 13:31:14 - __main__ - INFO - Creating initial file
+05-Sep-22 13:42:38 - __main__ - INFO - Scrape Initialized
+05-Sep-22 13:42:41 - __main__ - INFO - The scrape has completed
+05-Sep-22 13:43:19 - __main__ - INFO - File exists!
+05-Sep-22 13:43:27 - __main__ - INFO - No file exists yet
+05-Sep-22 13:43:27 - __main__ - INFO - Creating initial file
