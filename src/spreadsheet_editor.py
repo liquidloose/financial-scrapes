@@ -22,7 +22,7 @@ class ExcelWriter:
 
     def file_check(self):
         '''
-        Checks if the excel file exists. If it doesn't exist, a header row 
+        Checks if the excel file exists. If it doesn't exist, a header row
         is added to the spreadsheet.
         '''
         path_exists = Path("/var/www/financial-scrapes/wsj.xlsx")
@@ -34,7 +34,7 @@ class ExcelWriter:
             print('No file exists')
             self.writer()
 
-    def nyse_dataframe(self):
+    def wsj_data(self):
         '''
         Returns a dataframe containing NYSE data
         '''
@@ -44,33 +44,24 @@ class ExcelWriter:
         df1.drop('weekAgo', axis=1, inplace=True)
 
         print(df1)
-        df1 = df1.iloc[:, 1:]
-        df1_transposed = df1.T
-        # 0, " ", ["Scraped @", time.strftime("%b %d, %Y")])
-        print(df1_transposed)
-        # df1_transposed.to_excel('wsj.xlsx', index=False)
-        # return df1_transposed.to_excel('wsj.xlsx', index=False)
-        print(df1_transposed.info(verbose=True))
+        return df1
 
-        return df1_transposed
-
-    @staticmethod
+    @ staticmethod
     def data_connector(data_1):
         '''
 
         '''
         data_1.insert(3, " ", ["Scraped @", time.strftime("%b %d, %Y")])
 
-        #data_1.loc[-1] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13]
         print(data_1.info(verbose=True))
         return data_1
 
     def writer(self):
         logger.info('Creating initial file')
         print('Creating initial file')
-        #df = pd.concat([self.nyse_dataframe()])
-        formatted_data = self.data_connector(
-            self.nyse_dataframe())
+        # df = pd.concat([self.wsj_data()])
+        formatted_data = self.wsj_data().T
 
-        print(formatted_data)
-        formatted_data.to_excel('wsj.xlsx', index=False)
+        # contains just the essential data
+        essential_data = formatted_data.iloc[1: 3]
+        essential_data.to_excel('wsj.xlsx', index=True, header=False)

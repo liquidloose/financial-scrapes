@@ -2,13 +2,9 @@
 Parsing class that takes html input and extracts specific data.
 '''
 from dataclasses import InitVar, dataclass, field
-from email.policy import default
 import json
 import logging
 import re
-from reprlib import Repr
-import time
-from typing import ClassVar
 
 
 logging.basicConfig(level=logging.INFO, filename='app.log', filemode='a',
