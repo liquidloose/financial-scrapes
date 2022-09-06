@@ -5,31 +5,30 @@ from dataclasses import asdict
 import json
 import pytest
 
-from src.data_parser import WSJParser
+from src.spreadsheet_editor import ExcelWriter
+
 
 print('hello, world!')
 
 
 @pytest.fixture
 def get_json():
-    '''
-    Opens and returns html file.
-    '''
+
     with open('market_diary.json', 'r') as f:
         data = json.load(f)
     # print(data)
     return data
 
 
+'''
 @pytest.fixture
 def get_html():
-    '''
-    Opens and returns html file.
-    '''
+
     with open('market_diary.html', 'r') as f:
         data = f.read()
     # print(data)
     return data
+'''
 
 
 def test_json_file(get_json):
@@ -42,10 +41,18 @@ def test_json_file(get_json):
     required_length = 14237
     actual_length = len(str(get_json))
 
-    #assert required_length == actual_length
+    # assert required_length == actual_length
     assert 3
 
 
+def test_pandas(get_json):
+
+    test = ExcelWriter(get_json)
+
+    print('hi')
+
+
+'''
 def test_json_parsing(get_html):
 
     html = WSJParser(get_html)
@@ -55,3 +62,4 @@ def test_json_parsing(get_html):
     print(asdict(html))
     # print(html.nyse_header())
    # print(html.test_test())
+'''

@@ -6,18 +6,19 @@ name = "pypi"
 [packages]
 beautifulsoup4 = "*"
 playwright = "*"
-pylint = "*"
 pytest-asyncio = "*"
 requests = "*"
 pandas = "*"
 openpyxl = "*"
+pylint = "*"
 
 [dev-packages]
 pytest-asyncio = "*"
 pytest = "*"
-pylint = "*"
 autopep8 = "*"
 bpython = "*"
+pylint = "*"
+pylance = "*"
 
 [requires]
 python_version = "3.10"

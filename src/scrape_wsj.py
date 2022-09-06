@@ -39,8 +39,10 @@ async def main():
 
         data = WSJParser(html_string)
         data_dict = asdict(data)
-        print(type(data_dict))
-        print(data_dict['nyse_data'])
+
+        print(data)
+        print(data_dict)
+        # print(data_dict['nyse_data'])
 
         logger.info("The scrape has completed")
 

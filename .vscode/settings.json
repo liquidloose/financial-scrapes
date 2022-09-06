@@ -1,3 +1,15 @@
 {
-  "python.analysis.extraPaths": ["./src"]
+  "python.testing.pytestPath": "/var/www/financial-scrapes/",
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+  "editor.defaultFormatter": "ms-python.python",
+  "pylint.interpreter": ["python"],
+  "python.autoComplete.extraPaths": ["/var/www/financial-scrapes/"],
+  "python.languageServer": "Pylance",
+  "python.linting.pydocstyleEnabled": false,
+  "python.linting.pylintEnabled": true,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.terminal.executeInFileDir": true
 }
