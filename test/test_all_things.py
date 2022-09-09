@@ -49,7 +49,7 @@ def test_pandas(get_json):
 
     test = ExcelSheetCreator(get_json)
 
-    print('hi')
+    assert test
 
 
 '''

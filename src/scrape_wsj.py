@@ -12,7 +12,8 @@ from data_parser import WSJParser
 
 
 logging.basicConfig(level=logging.INFO, filename='app.log', filemode='a',
-                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    datefmt='%d-%b-%y %H:%M:%S')
 
 logger = logging.getLogger(__name__)
 
@@ -27,7 +28,8 @@ async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
         page = await browser.new_page()
-        await page.goto('https://www.wsj.com/market-data/stocks/marketsdiary?id=%7B%22application%22%3A%22WSJ \
+        await page.goto('https://www.wsj.com/market-data/stocks/\
+            marketsdiary?id=%7B%22application%22%3A%22WSJ \
             %22%2C%22marketsDiaryType%22%3A%22diaries%22%7D&type=mdc_marketsdiary')
 
         html = await page.content()

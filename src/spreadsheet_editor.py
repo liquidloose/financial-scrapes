@@ -1,3 +1,4 @@
+from importlib.metadata import metadata
 from tabnanny import verbose
 import numpy as np
 import pandas as pd
@@ -33,7 +34,7 @@ class ExcelSheetCreator:
         Checks if the excel file exists. If it doesn't exist, a header row
         is added to the spreadsheet.
         '''
-        path_exists = Path("/var/www/financial-scrapes/wsj.xlsx")
+        path_exists = Path("/var/www/financial-scrapes/test/wsj.xlsx")
         if path_exists.is_file():
             print('File exists!')
             logger.info('File exists!')
@@ -65,19 +66,22 @@ class ExcelSheetCreator:
         return [nyse_data.T, nasdaq_data.T]
 
     @staticmethod
-    def data_injector(data_1, exchange_name):
+    def data_injector(data_1, data_2):
         '''
         Inserts exchange names and scrape times into the data
-
         '''
         data_1.insert(
-            0, " ", ["", "Exchange", exchange_name])
+            0, " ", ["", "Exchange", "NYSE"])
 
-        if exchange_name == 'NYSE':
-            data_1.insert(
-                0, " 2", ["", "Scraped @", time.strftime("%b %d, %Y")])
+        data_1.insert(
+            0, " 2", ["", "Scraped On", time.strftime("%b %d, %Y")])
 
-        return data_1
+        data_1.insert(
+            15, " ", ["", "Exchange", "NASDAQ"], allow_duplicates=True)
+
+        data = pd.concat([data_1, data_2], axis=1)
+
+        return data.iloc[1:3]
 
     def writer(self):
         '''
@@ -85,17 +89,19 @@ class ExcelSheetCreator:
         '''
 
         file_exists = self.file_check()
+        print(f"does the file exist? {file_exists}")
 
-        # df = pd.concat([self.wsj_data()])
         data = self.wsj_data(self.data)
-        nyse_data = data[0]
-        nasdaq_data = data[1]
-        print(nyse_data)
-        print(nasdaq_data)
 
-        # print(formatted_data)
-        #test_data = self.data_injector(formatted_data, 'NYS2E')
-        # print(test_data)
-        # contains just the essential data
-        #essential_data = formatted_data.iloc[1: 3]
-        #essential_data.to_excel('wsj.xlsx', index=True, header=False)
+        sheet_data = self.data_injector(data[0], data[1])
+
+        if file_exists is False:
+            print('Creating file and writing data to it')
+            logger.info('Creating file and writing data to it')
+            sheet_data.to_excel(
+                'wsj.xlsx', sheet_name="stock_data", index=False, header=False)
+        elif file_exists is True:
+            print('Appending data to file')
+            logger.info('Appending data to file')
+            with pd.ExcelWriter('wsj.xlsx', mode='a', if_sheet_exists='overlay') as writer:
+                sheet_data.to_excel(writer, sheet_name="stock_data")
