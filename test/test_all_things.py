@@ -5,7 +5,7 @@ from dataclasses import asdict
 import json
 import pytest
 
-from src.spreadsheet_editor import ExcelWriter
+from src.spreadsheet_editor import ExcelSheetCreator
 
 
 print('hello, world!')
@@ -47,7 +47,7 @@ def test_json_file(get_json):
 
 def test_pandas(get_json):
 
-    test = ExcelWriter(get_json)
+    test = ExcelSheetCreator(get_json)
 
     print('hi')
 
