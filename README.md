@@ -1,6 +1,5 @@
 # financial-scrapes
 
-Scott Furtado
-Email is fine. So the first two tables are for NYSE and NASDAQ. Those are the only ones I want data for. 
+This is a scraper that takes data from the Wall Street Journal's Market diary. It grabs the data from an API endpoint the WSJ uses. It then writes the data to a spreadsheet and emails it to your desired recipients.
 
-And get everything except the ones that have a z in front. So advances declines unchanged new high new low and all the volume.
+The entry point into the app is scrape_wsj.py
