@@ -1,14 +1,8 @@
-from email import encoders
 from email.message import EmailMessage
-from email.mime.base import MIMEBase
 from fileinput import filename
 import smtplib
 import ssl
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-import sys
 
-from secret import Secrets
 
 # Creates the base text message. Enter your own credentials.
 # Each field needs to be a string
