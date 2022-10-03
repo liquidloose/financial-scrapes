@@ -1,7 +1,8 @@
 from email.message import EmailMessage
-from fileinput import filename
 import smtplib
 import ssl
+
+from secret import Secrets
 
 
 # Creates the base text message. Enter your own credentials.
