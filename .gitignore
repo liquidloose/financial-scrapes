@@ -1,4 +1,4 @@
 *html
 .pytest_cache
-./src/secret.py
+src/secret.py
 
