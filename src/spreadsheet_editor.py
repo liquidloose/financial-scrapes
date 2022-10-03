@@ -1,10 +1,14 @@
 from importlib.metadata import metadata
+import re
 from tabnanny import verbose
 import numpy as np
 import pandas as pd
 import time
 from pathlib import Path
 import logging
+from openpyxl import Workbook, load_workbook
+from openpyxl.utils import get_column_letter
+from pyparsing import col
 
 
 logging.basicConfig(level=logging.INFO, filename='app.log', filemode='a',
@@ -83,6 +87,40 @@ class ExcelSheetCreator:
 
         return data.iloc[1:3]
 
+    @staticmethod
+    def sheet_filter():
+        '''
+        Formats spreadsheet data types and column widths
+        '''
+        workbook = load_workbook('wsj.xlsx')
+        sheet = workbook["stock_data"]
+
+        def resize_columns():
+            for col in sheet.columns:
+                max_length = 0
+                column = col[0].column_letter  # Get the column name
+                for cell in col:
+                    try:  # Necessary to avoid error on empty cells
+                        if len(str(cell.value)) > max_length:
+                            max_length = len(str(cell.value))
+                    except:
+                        pass
+                adjusted_width = (max_length + 2) * 1.2
+                sheet.column_dimensions[column].width = adjusted_width
+
+        for row in sheet:
+            for cell in row:
+                cell_coordinate = cell.coordinate
+                print(cell_coordinate)
+                if isinstance(cell.value, str) and re.match(r"(\d+)(,)", cell.value):
+                    strip_comma = int(cell.value.replace(",", ""))
+                    sheet[cell_coordinate] = strip_comma
+                elif isinstance(cell.value, str) and re.match(r"(\d+)(.)", cell.value):
+                    cell_to_float = float(cell.value)
+                    sheet[cell_coordinate] = cell_to_float
+        resize_columns()
+        workbook.save('wsj.xlsx')
+
     def writer(self):
         '''
         Writes the data to an excel file
@@ -104,4 +142,11 @@ class ExcelSheetCreator:
             print('Appending data to file')
             logger.info('Appending data to file')
             with pd.ExcelWriter('wsj.xlsx', mode='a', if_sheet_exists='overlay') as writer:
-                sheet_data.to_excel(writer, sheet_name="stock_data")
+                append_data = pd.DataFrame(sheet_data.iloc[1])
+                transposed_appended_data = pd.DataFrame(sheet_data.iloc[1]).T
+                print(f'this is the sheet data: {transposed_appended_data}')
+                transposed_appended_data.to_excel(
+                    writer, sheet_name="stock_data", startrow=writer.sheets["stock_data"].max_row,
+                    index=False, header=False)
+
+        self.sheet_filter()

@@ -5,7 +5,6 @@ import asyncio
 from dataclasses import asdict
 import json
 import logging
-from bs4 import BeautifulSoup as Soup
 from playwright.async_api import async_playwright
 
 from data_parser import WSJParser
@@ -34,8 +33,6 @@ async def main():
 
         html = await page.content()
         html_string = (str(html))
-        soup = Soup(html, "html.parser")
-        # print(soup)
 
         await page.wait_for_timeout(1000)
 
