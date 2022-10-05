@@ -1,4 +1,15 @@
-05-Sep-22 19:31:36 - __main__ - INFO - Scrape Initialized
-05-Sep-22 19:31:38 - __main__ - INFO - The scrape has completed
-05-Sep-22 23:48:33 - __main__ - INFO - Scrape Initialized
-05-Sep-22 23:48:35 - __main__ - INFO - The scrape has completed
+05-Oct-22 15:38:38 - __main__ - INFO - Scrape Initialized
+05-Oct-22 15:38:40 - spreadsheet_editor - INFO - File exists!
+05-Oct-22 15:38:40 - spreadsheet_editor - INFO - Appending data to file
+05-Oct-22 16:11:05 - __main__ - INFO - Scrape Initialized
+05-Oct-22 16:11:08 - spreadsheet_editor - INFO - No file exists yet
+05-Oct-22 16:11:08 - spreadsheet_editor - INFO - Creating file and writing data to it
+05-Oct-22 16:11:09 - __main__ - INFO - The scrape has completed
+05-Oct-22 16:11:18 - __main__ - INFO - Scrape Initialized
+05-Oct-22 16:11:20 - spreadsheet_editor - INFO - File exists!
+05-Oct-22 16:11:20 - spreadsheet_editor - INFO - Appending data to file
+05-Oct-22 16:11:21 - __main__ - INFO - The scrape has completed
+05-Oct-22 16:12:18 - __main__ - INFO - Scrape Initialized
+05-Oct-22 16:12:20 - spreadsheet_editor - INFO - File exists!
+05-Oct-22 16:12:20 - spreadsheet_editor - INFO - Appending data to file
+05-Oct-22 16:12:21 - __main__ - INFO - The scrape has completed

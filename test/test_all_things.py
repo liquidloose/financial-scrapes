@@ -1,14 +1,16 @@
 '''
 Runs tests
 '''
+
 from dataclasses import asdict
 import json
 import pytest
-
 from src.spreadsheet_editor import ExcelSheetCreator
+from test.settings import PathData
 
 
-print('hello, world!')
+def test_test():
+    assert 1 == 1
 
 
 @pytest.fixture
@@ -18,17 +20,6 @@ def get_json():
         data = json.load(f)
     # print(data)
     return data
-
-
-'''
-@pytest.fixture
-def get_html():
-
-    with open('market_diary.html', 'r') as f:
-        data = f.read()
-    # print(data)
-    return data
-'''
 
 
 def test_json_file(get_json):
@@ -47,19 +38,6 @@ def test_json_file(get_json):
 
 def test_pandas(get_json):
 
-    test = ExcelSheetCreator(get_json)
+    test = ExcelSheetCreator(get_json, PathData.asset_folder)
 
     assert test
-
-
-'''
-def test_json_parsing(get_html):
-
-    html = WSJParser(get_html)
-    # print(html.base_data())
-    # print(html.nyse_header())
-    # print(html.nasdaq_data())
-    print(asdict(html))
-    # print(html.nyse_header())
-   # print(html.test_test())
-'''

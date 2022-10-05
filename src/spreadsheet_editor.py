@@ -1,6 +1,4 @@
-from importlib.metadata import metadata
 import re
-from tabnanny import verbose
 import numpy as np
 import pandas as pd
 import time
@@ -24,8 +22,9 @@ class ExcelSheetCreator:
     data to an excel spreadsheet.
     '''
 
-    def __init__(self, data):
+    def __init__(self, data, path):
         self.data = data
+        self.path = path
         # self.file_check()
         self.writer()
 
@@ -33,12 +32,14 @@ class ExcelSheetCreator:
         return "ExcelSheetCreator Object"
 
     @staticmethod
-    def file_check():
+    def file_check(path):
         '''
         Checks if the excel file exists. If it doesn't exist, a header row
         is added to the spreadsheet.
         '''
-        path_exists = Path("/var/www/financial-scrapes/test/wsj.xlsx")
+        print(path)
+        #path_exists = Path("/var/www/financial-scrapes/test/wsj.xlsx")
+        path_exists = Path(path + "wsj.xlsx")
         if path_exists.is_file():
             print('File exists!')
             logger.info('File exists!')
@@ -88,11 +89,11 @@ class ExcelSheetCreator:
         return data.iloc[1:3]
 
     @staticmethod
-    def sheet_filter():
+    def sheet_filter(file):
         '''
         Formats spreadsheet data types and column widths
         '''
-        workbook = load_workbook('wsj.xlsx')
+        workbook = load_workbook(file)
         sheet = workbook["stock_data"]
 
         def resize_columns():
@@ -111,7 +112,6 @@ class ExcelSheetCreator:
         for row in sheet:
             for cell in row:
                 cell_coordinate = cell.coordinate
-                print(cell_coordinate)
                 if isinstance(cell.value, str) and re.match(r"(\d+)(,)", cell.value):
                     strip_comma = int(cell.value.replace(",", ""))
                     sheet[cell_coordinate] = strip_comma
@@ -119,15 +119,17 @@ class ExcelSheetCreator:
                     cell_to_float = float(cell.value)
                     sheet[cell_coordinate] = cell_to_float
         resize_columns()
-        workbook.save('wsj.xlsx')
+        workbook.save(file)
 
     def writer(self):
         '''
         Writes the data to an excel file
         '''
 
-        file_exists = self.file_check()
+        print(f' this is the self.path data type: {type(self.path)}')
+        file_exists = self.file_check(self.path)
         print(f"does the file exist? {file_exists}")
+        file_to_write = self.path + 'wsj.xlsx'
 
         data = self.wsj_data(self.data)
 
@@ -137,11 +139,11 @@ class ExcelSheetCreator:
             print('Creating file and writing data to it')
             logger.info('Creating file and writing data to it')
             sheet_data.to_excel(
-                'wsj.xlsx', sheet_name="stock_data", index=False, header=False)
+                file_to_write, sheet_name="stock_data", index=False, header=False)
         elif file_exists is True:
             print('Appending data to file')
             logger.info('Appending data to file')
-            with pd.ExcelWriter('wsj.xlsx', mode='a', if_sheet_exists='overlay') as writer:
+            with pd.ExcelWriter(file_to_write, mode='a', if_sheet_exists='overlay') as writer:
                 append_data = pd.DataFrame(sheet_data.iloc[1])
                 transposed_appended_data = pd.DataFrame(sheet_data.iloc[1]).T
                 print(f'this is the sheet data: {transposed_appended_data}')
@@ -149,4 +151,4 @@ class ExcelSheetCreator:
                     writer, sheet_name="stock_data", startrow=writer.sheets["stock_data"].max_row,
                     index=False, header=False)
 
-        self.sheet_filter()
+        self.sheet_filter(file_to_write)
