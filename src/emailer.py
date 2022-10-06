@@ -1,17 +1,18 @@
 from email.message import EmailMessage
+import os
 import smtplib
 import ssl
 
-from settings import Secrets
+from settings import EmailList, PathData
 
 
 class SendEmail:
     # Creates the base text message. Enter your own credentials.
     # Each field needs to be a string
     def send(self):
-        sender_email = Secrets.sender_email
-        sender_password = Secrets.sender_password
-        receiver_email = Secrets.receiver_email
+        sender_email = os.environ.get('RONS_ROBOTS_GMAIL')
+        sender_password = os.environ.get('ROBOTS_PASSWORD')
+        receiver_email = EmailList.receiver_email
 
         message = EmailMessage()
         message['Subject'] = "Wall Street Journal Market Diary Update"
@@ -36,7 +37,7 @@ class SendEmail:
     """, subtype='html')
 
         # Accesses the file and then attaches it to the email object
-        with open('./assets/wsj.xlsx', 'rb') as f:
+        with open(PathData.spreadsheet_file, 'rb') as f:
             file_data = f.read()
             file_name = f.name
 

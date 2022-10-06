@@ -13,3 +13,11 @@
 05-Oct-22 16:12:20 - spreadsheet_editor - INFO - File exists!
 05-Oct-22 16:12:20 - spreadsheet_editor - INFO - Appending data to file
 05-Oct-22 16:12:21 - __main__ - INFO - The scrape has completed
+06-Oct-22 15:40:51 - __main__ - INFO - Scrape Initialized
+06-Oct-22 15:40:53 - spreadsheet_editor - INFO - File exists!
+06-Oct-22 15:40:53 - spreadsheet_editor - INFO - Appending data to file
+06-Oct-22 15:40:55 - __main__ - INFO - The scrape has completed
+06-Oct-22 15:41:22 - __main__ - INFO - Scrape Initialized
+06-Oct-22 15:41:24 - spreadsheet_editor - INFO - File exists!
+06-Oct-22 15:41:24 - spreadsheet_editor - INFO - Appending data to file
+06-Oct-22 15:41:25 - __main__ - INFO - The scrape has completed

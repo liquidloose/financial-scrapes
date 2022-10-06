@@ -4,6 +4,7 @@ Runs tests
 
 from dataclasses import asdict
 import json
+import os
 import pytest
 from src.spreadsheet_editor import ExcelSheetCreator
 from test.settings import PathData
@@ -11,6 +12,10 @@ from test.settings import PathData
 
 def test_test():
     assert 1 == 1
+
+
+print(os.environ)
+print(type(os.environ.get('ROBOTS_PASSWORD')))
 
 
 @pytest.fixture
