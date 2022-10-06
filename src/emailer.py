@@ -12,7 +12,7 @@ class SendEmail:
     def send(self):
         sender_email = os.environ.get('RONS_ROBOTS_GMAIL')
         sender_password = os.environ.get('ROBOTS_PASSWORD')
-        receiver_email = EmailList.receiver_email
+        receiver_email = os.environ.get('WSJ_EMAIL_LIST')
 
         message = EmailMessage()
         message['Subject'] = "Wall Street Journal Market Diary Update"
